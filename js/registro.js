@@ -1,6 +1,16 @@
 // Hemos omitido los acentos en los comentarios por compatibilidad
 
+function limpiar(formulario) {
+  document.getElementById("errornombres").innerText = '';
+  document.getElementById("errorEmail").innerText = '';
+  document.getElementById("errorContrasena").innerText = '';
+  document.getElementById("errorConfirmacion").innerText = '';
+  document.getElementById("errorTipo").innerText = '';
+}
+
 function validar(formulario) {
+
+  limpiar();
 
   if(formulario.nombres.value.trim().length==0){
     document.getElementById("errornombres").innerText = 'Campo es obligatorio';
