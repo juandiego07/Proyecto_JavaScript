@@ -48,7 +48,6 @@ $(document).ready(function () {
   for(y = 0; y < 2; y++){
     cadena1 += `
               <h1>${last[y].nombre}</h1>
-              <a class="btn gradient-bg">Ver detalle</a>
         `
 }
 
@@ -62,7 +61,6 @@ $(document).ready(function () {
     for(y = 0; y < 2; y++){
         cadena2 += `
                   <h1>${next[y].nombre}</h1>
-                  <a class="btn gradient-bg">Ver detalle</a>
             `
     }
   //Modifica el DOM agregando el html generado
