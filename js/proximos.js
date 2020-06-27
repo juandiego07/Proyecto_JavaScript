@@ -36,7 +36,7 @@ $(document).ready(function () {
     for(y = 0; y < next.length; y++){
         cadena += `
                   <h1>${next[y].nombre}</h1>
-                  <a class="btn gradient-bg">Ver detalle</a>
+                  <a id=${next[y].id} class="btn gradient-bg" name="detalle" href="detalle.html?id=${next[y].id}">Ver detalle</a>
             `
     }
 

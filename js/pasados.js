@@ -36,10 +36,10 @@ $(document).ready(function () {
     for(y = 0; y < last.length; y++){
         cadena += `
                   <h1>${last[y].nombre}</h1>
-                  <a class="btn gradient-bg">Ver detalle</a>
+                  <a id=${last[y].id} class="btn gradient-bg" name="detalle" href="detalle.html?id=${last[y].id}">Ver detalle</a>
             `
     }
-  
+
   //Modifica el DOM agregando el html generado
     document.getElementById("pasados").innerHTML = cadena
 
