@@ -35,9 +35,13 @@ $(document).ready(function () {
   //Recorre el arreglo y concatena el HTML para cada evento
     for(y = 0; y < next.length; y++){
         cadena += `
-                  <h1>${next[y].nombre}</h1>
-                  <a id=${next[y].id} class="btn gradient-bg" name="detalle" href="detalle.html?id=${next[y].id}">Ver detalle</a>
-            `
+                  <div class="box4">
+                  <a href="detalle.html?id=${next[y].id}">${next[y].nombre}</a>
+                  <h6>${next[y].fecha} - ${next[y].lugar}</h6>
+                  <h6>${next[y].descripcion}</h6>
+                  <h6>Invitados: ${next[y].invitados}</h6>
+                  </div>          
+        `
     }
 
   //Modifica el DOM agregando el html generado dentro del div con id=evento

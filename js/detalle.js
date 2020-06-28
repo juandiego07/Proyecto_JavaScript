@@ -25,12 +25,13 @@ $(document).ready(function () {
     for(y = 0; y < show.length; y++){
       if( show[y].id == vdetalle()) {
         cadena += `
+                  <div class="box2">
                   <h1>${show[y].nombre}</h1>
-                  <h6>Fecha: ${show[y].fecha}</h6>
-                  <h6>Descripción: ${show[y].descripcion}</h6>
-                  <h6>Lugar: ${show[y].lugar}</h6>
-                  <h6>Precio: ${show[y].precio}</h6>
-                  <h6>Invitados: ${show[y].invitados}</h6>
+                  <p>${show[y].fecha} - ${show[y].lugar}</p>
+                  <p>${show[y].descripcion}</p>
+                  <p>Costo: ${show[y].precio}</h6>
+                  <p>Invitados: ${show[y].invitados}</p>
+                  </div>
             `
 
       }

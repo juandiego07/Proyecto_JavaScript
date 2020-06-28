@@ -47,7 +47,11 @@ $(document).ready(function () {
   //Recorre el arreglo y concatena el HTML para cada evento
   for(y = 0; y < 2; y++){
     cadena1 += `
-              <h1>${last[y].nombre}</h1>
+              <div class="box">
+              <a href="detalle.html?id=${last[y].id}">${last[y].nombre}</a>
+              <h6>${last[y].fecha}</h6>
+              <h6>${last[y].descripcion}</h6>
+              </div>
         `
 }
 
@@ -60,7 +64,11 @@ $(document).ready(function () {
   //Recorre el arreglo y concatena el HTML para cada evento
     for(y = 0; y < 2; y++){
         cadena2 += `
-                  <h1>${next[y].nombre}</h1>
+                  <div class="box">
+                  <a href="detalle.html?id=${next[y].id}">${next[y].nombre}</a>
+                  <h6>${next[y].fecha}</h6>
+                  <h6>${next[y].descripcion}</h6>
+                  </div>
             `
     }
   //Modifica el DOM agregando el html generado
